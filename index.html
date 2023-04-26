@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>綜合所得稅電子結算申報繳稅操作全攻略</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower/font-awesome/css/all.css">
+    <link rel="stylesheet" href="bower/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="bower/style.css">
+
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="bower/popper.js/dist/popper.min.js"></script> -->
+    <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower/jquery.fancybox.min.js"></script>
+    <script src="bower/main.js"></script>
+
+    <script>
+        $(function() {
+            // ------------------------------------------------------- //
+            // Multi Level dropdowns
+            // ------------------------------------------------------ //
+            $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+
+                if (!$(this).next().hasClass('show')) {
+                    $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+                }
+                $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+                    $('.dropdown-submenu .show').removeClass("show");
+                });
+
+                $(this).siblings().toggleClass("show");
+            });
+
+            $('#myCarousel').carousel({
+                interval: false,
+                keyboard: true
+            });
+            $('#myCarousel').hide();
+            //$("#page-wrap").load(encodeURI('table/IRXM/信用卡.html') + ' #page-wrap');
+            //updateImage("IRXM", "信用卡01", "信用卡");
+        });
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light py-2 shadow-sm" style="background-color: #addbc8;">
+        <div class="container">
+            <a href="#" class="navbar-brand font-weight-bold">
+                <img src="images/headerImg.png" width="200" height="52" class="d-inline-block align-top" alt="">
+            </a>
+            
+            <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Level one dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">手機報稅及行動電話認證</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <li><a href="https://efile.tax.nat.gov.tw/irxw/indexMobile.jsp" target="_blank" class="dropdown-item">手機報稅連結</a></li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Ｑ＆Ａ</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="https://www.ntbsa.gov.tw/download/88149aacd68e4142a171c66a03088a94" class="dropdown-item" title="下載PDF檔">手機報稅</a></li>
+                                    <li><a href="https://www.ntbsa.gov.tw/download/f10a93eb4de14f738e2b57c61ce5f706" class="dropdown-item" title="下載PDF檔">行動電話認證</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">懶人包</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="https://www.dot.gov.tw/download/80776ea0911c402bbab7aa0463a887a3" class="dropdown-item" title="下載PDF檔">手機報稅</a></li>
+                                    <li><a href="https://www.dot.gov.tw/download/b28352bf6d28413a907a1ccd53c62ed0" class="dropdown-item" title="下載PDF檔">行動電話認證</a></li>                                            
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">教學步驟</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="#" class="dropdown-item" onclick="selectMidMenu(3)">手機報稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectMidMenu(2)">Web線上版</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectMidMenu(1)">離線版</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectMidMenu(5)">稅額試算回復</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectMidMenu(4)">稅額試算書表下載</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="https://www.tax.nat.gov.tw/alltax-declare.html?id=1" target="_blank" class="dropdown-item">申報結果查詢</a></li>                            
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+
+                    <!-- Level one dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">稅額試算服務</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <li><a href="https://efile.tax.nat.gov.tw/ibxw/index.jsp" target="_blank" class="dropdown-item">線上確認回復</a></li>
+                            <li><a href="https://svc.tax.nat.gov.tw/svc/IbxInquiry.jsp" target="_blank" class="dropdown-item">是否適用稅額試算查詢</a></li>
+                            <li><a href="https://pfiles.tax.nat.gov.tw/ibxpdf/index.jsp" target="_blank" class="dropdown-item">稅額試算書表電子檔案下載</a></li>                            
+                            <!-- <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(2)">試算書表電子檔案下載</a></li> -->
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">確認回復流程教學</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(3)">退稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(4)">不繳不退</a></li>
+
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">繳稅</a>
+                                        <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(5)">委託取款轉帳繳稅</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(6)">信用卡繳稅</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(7)">一般繳稅</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(8)">晶片金融卡繳稅</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(9)">活期(儲蓄)存款帳戶繳稅</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(10)">行動支付信用卡</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectIbxMenu(11)">行動支付金融卡</a></li>                                 
+                                        </ul>
+                                    </li>                                        
+                                </ul>
+                            </li>
+                            <li><a href="" target="_blank" class="dropdown-item">申報結果查詢</a></li>                            
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+
+
+                    <!-- Level one dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">超商查繳稅服務</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <!-- Level two dropdown-->
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">統一</a>
+                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <!-- Level three dropdown-->
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">補印稅額試算繳稅繳納單</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(1)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(2)">健保卡</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(3)">手機認證</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">列印所得及扣除額查詢碼</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(4)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(5)">健保卡</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(21)">其他訊息</a></li>
+                                    <!-- End Level three -->
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">全家</a>
+                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <!-- Level three dropdown-->
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">補印稅額試算繳稅繳納單</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(6)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(7)">健保卡</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(8)">手機認證</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">列印所得及扣除額查詢碼</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(9)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(10)">健保卡</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(22)">其他訊息</a></li>
+                                    <!-- End Level three -->
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">來來</a>
+                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <!-- Level three dropdown-->
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">補印稅額試算繳稅繳納單</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(11)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(12)">健保卡</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(13)">手機認證</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">列印所得及扣除額查詢碼</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(14)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(15)">健保卡</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(23)">其他訊息</a></li>
+                                    <!-- End Level three -->
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">萊爾富</a>
+                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <!-- Level three dropdown-->
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">補印稅額試算繳稅繳納單</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(16)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(17)">健保卡</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(18)">手機認證</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a id="dropdownMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">列印所得及扣除額查詢碼</a>
+                                        <ul aria-labelledby="dropdownMenu3" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(19)">自然人憑證</a></li>
+                                            <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(20)">健保卡</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(24)">其他訊息</a></li>
+                                    <!-- End Level three -->
+                                </ul>
+                            </li>
+                            <!-- Level two dropdown-->
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">下載所得及扣除額資料</a>
+                                <ul aria-labelledby="dropdownMenu2" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(25)">本人全戶資料</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(26)">受扶養親屬資料</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectKioskMenu(27)">手機板</a></li>
+                                </ul>
+                            </li>
+                            <!-- End Level two -->                        
+                        </ul>
+                    </li>
+                    <!-- End Level one -->     
+
+                    <!-- Level one dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">申報及繳稅</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <li><a href="https" target="_blank" class="dropdown-item">手機報稅連結</a></li>
+                            <!-- Level two dropdown-->
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">手機版申報繳稅流程</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(1)">信用卡繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(2)">活期(儲蓄)存款帳戶繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(3)">行動支付-信用卡</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(4)">行動支付-金融卡</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(5)">電支帳號</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(6)">委託取款轉帳繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(7)">現金或票據</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxpMenu(8)">自動櫃員機繳稅</a></li>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li><a href="https://efile.tax.nat.gov.tw/irxw/index.jsp" target="_blank" class="dropdown-item">線上版申報連結</a></li>
+                            <!-- Level two dropdown-->
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">線上版申報繳稅流程</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(1)">委託取款轉帳繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(2)">信用卡繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(3)">一般繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(4)">晶片金融卡繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(5)">活期(儲蓄)存款帳戶繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(6)">行動支付-信用卡</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(7)">行動支付-金融卡</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxmMenu(8)">電支帳戶</a></li>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li><a href="https://download.tax.nat.gov.tw/irx/IRX10900.EXE" target="_blank" class="dropdown-item">離線版申報軟體下載</a></li>                            
+                            <li class="dropdown-submenu">
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">離線版申報繳稅流程</a>
+                                <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(1)">委託取款轉帳繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(2)">信用卡繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(3)">一般繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(4)">晶片金融卡繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(5)">活期(儲蓄)存款帳戶繳稅</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(6)">行動支付-信用卡</a></li>
+                                    <li><a href="#" class="dropdown-item" onclick="selectIrxMenu(7)">行動支付-金融卡</a></li>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li><a href="https://www.tax.nat.gov.tw/alltax-declare.html?id=1" target="_blank" class="dropdown-item">申報結果查詢</a></li>
+                            <li><a href="https://youtube.com/playlist?list=PLgGUCb9nNUXCpHuZSRMK7Zqy7yykU2hhc" target="_blank" class="dropdown-item">影音教學</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+
+                                        <!-- End Level one -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">附件上傳</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <!-- Level two dropdown-->
+                            <li><a href="#" class="dropdown-item" onclick="selectAttachMenu(1)">操作說明</a></li>                            
+                            <li><a href="https://attach.tax.nat.gov.tw/irxatt/index.jsp" class="dropdown-item" target="_blank" onclick="selectIrxMenu(7)">附件上傳連結</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+
+                    <!-- End Level one -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">受肺炎疫情影響申請延期分期</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <!-- Level two dropdown-->
+                            <li><a href="https://www.etax.nat.gov.tw/etwmain/online-service/file-tax-payment-postpone-installment-due-to-covid-19" target="_blank" class="dropdown-item">線上申辦</a></li>
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- For carousel purpose -->
+    <section class="text-white">
+        <div class="container">
+            <div class="row">
+                <div id="flow-control-title"></div>
+                <div id="page-wrap"></div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+
+                    <div id="carousel-indicators">
+                    </div>
+                    <!-- The slideshow -->
+                    <div id="carousel-inner" class="carousel-inner">
+
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <!-- <i class="fas fa-chevron-circle-left fa-2x"></i> -->
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <!--
+            <div class="row pt-5">
+                <div class="col-lg-10 mx-auto">
+                <p class="lead">The first level is built by the default Bootstrap's dropdown menu.</p>
+                <p class="lead">The next levels are structurally similar to the first level, but they're wrapped into
+                    <code>.dropdown-submneu</code> class instead of <code>.dropdown</code>.</p>
+                <p class="lead">In the subsequent levels, We position the <code>.dropdown-menu</code> using css to achieve the
+                    desired location.</p>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+    <!-- End -->
+</body>
+
+</html>

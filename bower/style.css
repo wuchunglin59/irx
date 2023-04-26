@@ -1,0 +1,204 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+#page-wrap { 
+    width: 100%;
+}
+
+#flow-control-title {
+  width: 100%;
+  background: #4568DC;
+  background: -webkit-linear-gradient(to right, rgb(209, 230, 238), rgb(240, 245, 213));
+  background: linear-gradient(to right,rgb(200, 232, 245), rgb(240, 245, 213));
+  color: #80053e;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: -2px;
+  margin-bottom: 2px;
+}
+
+.altrowstable {
+  font-family: verdana,arial,sans-serif;
+  font-size:14px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #a9c6c9;
+  border-collapse: collapse;
+  width: 100%;
+  font-weight: normal;
+}
+.altrowstable th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9c6c9;
+}
+.altrowstable td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #a9c6c9;
+}
+.headercolor {
+  background:#ddc9c0;
+}
+.oddrowcolor{
+  background-color:#e5dad4;
+}
+.evenrowcolor{
+  background-color:#c3dde0;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+/*
+*
+* ==========================================
+* FOR CAROUSEL PUREPOSE
+* ==========================================
+*
+*/
+
+body {
+  background: #4568DC;
+  background: -webkit-linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
+  background: linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
+  min-height: 100vh;
+  /*background-image : url(../images/back.jpg);*/
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center 30px;
+  background-size: 100% 97%;
+}
+
+code {
+  color: #B06AB3;
+  background: #fff;
+  padding: 0.1rem 0.2rem;
+  border-radius: 0.2rem;
+}
+
+/*
+Forces carousel image to be 100% width and not max width of 100%
+*/
+#myCarousel {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  max-height: 700px;
+  padding-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myCarousel .carousel-inner > .carousel-item > img {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  max-height: 700px;
+}
+
+.carousel-control-prev {
+  color:#036;
+  margin-left: -.5rem;
+  z-index: 10;
+}
+
+.carousel-control-next {
+  color:#036;
+  margin-right: -.5rem;
+  z-index: 10;
+}
+
+.carousel-controls a:hover {
+  color: 004289;
+  z-index: 10;
+}
+
+.carousel-control-prev:hover {
+  color:red;
+}
+
+.carousel-control-next:hover {
+  color:red;
+}
+
+.carousel-indicators-numbers li {
+  font-size: 14px;
+  text-indent: 0;
+  margin: 0 2px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 100%;
+  line-height: 20px;
+  color: #fff;
+  background-color: #999;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+.carousel-indicators-numbers li.visited, .carousel-indicators-numbers li:hover, .carousel-indicators-numbers li.active {
+  margin: 0 2px;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 110, 255);
+}
+
+.red {
+    color: black;
+    width:100%;
+    overflow: hidden;
+    padding: 5px 0 0 5px;
+}
+
+.blue {    
+    max-width: 20%;
+    min-width: 2%;
+    min-height: 2%;
+    display:inline-block;
+    margin: 5px 5px 5px 5px;
+}
+
+.dropdown-menu-bg {
+  background: -webkit-linear-gradient(to right,#f598a8, #f6edb2);
+  background: linear-gradient(to right, #f598a8, #f6edb2);
+}
+
+@media screen and (max-width: 768px) {
+
+  .dropdown-menu {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  body {
+  background: #4568DC;
+  background: -webkit-linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
+  background: linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
+  min-height: 100vh;
+  /* background-image : url(../images/back1.jpg);*/
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center 40px;
+  background-size: 100% 95%;
+  }  
+}

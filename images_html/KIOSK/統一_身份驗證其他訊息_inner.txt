@@ -1,0 +1,7 @@
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-01-選自人憑證卻插健保卡-統一.jpg" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-02-自人憑證打錯密碼-統一.jpg" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-03-自人憑證打錯密碼被鎖卡-統一.jpg" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-04-健保卡錯一次-統一.jpg" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-05-健保卡錯三次-統一.jpg" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-06-選健保卡卻插錯卡-統一.jpg" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\統一\身份驗證其他訊息\99-07-自然人憑證新卡尚未開通.jpg" alt=""></div>

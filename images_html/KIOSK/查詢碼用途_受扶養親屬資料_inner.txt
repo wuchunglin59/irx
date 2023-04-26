@@ -1,0 +1,5 @@
+<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\受扶養親屬資料\11.JPG" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\受扶養親屬資料\12.JPG" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\受扶養親屬資料\13.JPG" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\受扶養親屬資料\14.JPG" alt=""></div>
+<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\受扶養親屬資料\15.JPG" alt=""></div>

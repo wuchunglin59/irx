@@ -1,0 +1,7 @@
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/01.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/02.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/03.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/04.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/05.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/06.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/電支帳戶_03_更正申報_稅額減少/07.png" alt=""></div>

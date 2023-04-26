@@ -1,0 +1,4 @@
+<div class="carousel-item"><img src="images/IRXM/退稅/01.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/退稅/02.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/退稅/03.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXM/退稅/04.png" alt=""></div>

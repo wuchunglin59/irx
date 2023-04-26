@@ -1,0 +1,7 @@
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX001.jpg" alt=""></div>
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX002.jpg" alt=""></div>
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX003.jpg" alt=""></div>
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX004.jpg" alt=""></div>
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX005.jpg" alt=""></div>
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX006.jpg" alt=""></div>
+<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅042_04晶片金融卡_更正申報_僅可使用原申報方式_不可採信用卡/IRX007.jpg" alt=""></div>
