@@ -22,5 +22,3 @@
 <div class="carousel-item"><img src="images/IRX/委取01/IRX022.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/委取01/IRX023.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/委取01/IRX024.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/委取01/IRX025.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/委取01/IRX026.JPG" alt=""></div>

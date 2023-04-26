@@ -20,5 +20,4 @@
 <li data-target="#myCarousel" data-slide-to="18">19</li>
 <li data-target="#myCarousel" data-slide-to="19">20</li>
 <li data-target="#myCarousel" data-slide-to="20">21</li>
-<li data-target="#myCarousel" data-slide-to="21">22</li>
 </ul>

@@ -30,6 +30,3 @@
 <div class="carousel-item"><img src="images/IRX/信用卡033_未取消授權_更正申報_稅額增加01_差額採01委取/IRX030.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/信用卡033_未取消授權_更正申報_稅額增加01_差額採01委取/IRX031.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/信用卡033_未取消授權_更正申報_稅額增加01_差額採01委取/IRX032.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡033_未取消授權_更正申報_稅額增加01_差額採01委取/IRX033.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡033_未取消授權_更正申報_稅額增加01_差額採01委取/IRX034.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡033_未取消授權_更正申報_稅額增加01_差額採01委取/IRX035.JPG" alt=""></div>

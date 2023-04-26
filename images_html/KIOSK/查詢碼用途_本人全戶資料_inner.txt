@@ -1,7 +1,0 @@
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\1.jpg" alt=""></div>
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\2.jpg" alt=""></div>
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\3.jpg" alt=""></div>
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\4.jpg" alt=""></div>
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\5.jpg" alt=""></div>
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\6.jpg" alt=""></div>
-<div class="carousel-item"><img src="images\KIOSK\查詢碼用途\本人全戶資料\7.jpg" alt=""></div>

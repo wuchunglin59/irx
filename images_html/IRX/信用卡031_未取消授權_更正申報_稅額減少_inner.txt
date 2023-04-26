@@ -19,6 +19,3 @@
 <div class="carousel-item"><img src="images/IRX/信用卡031_未取消授權_更正申報_稅額減少/IRX019.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/信用卡031_未取消授權_更正申報_稅額減少/IRX020.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/信用卡031_未取消授權_更正申報_稅額減少/IRX021.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡031_未取消授權_更正申報_稅額減少/IRX022.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡031_未取消授權_更正申報_稅額減少/IRX023.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡031_未取消授權_更正申報_稅額減少/IRX024.JPG" alt=""></div>

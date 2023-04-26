@@ -15,4 +15,3 @@
 <div class="carousel-item"><img src="images/IRX/委取03_更正申報_02稅額減少/IRX015.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/委取03_更正申報_02稅額減少/IRX016.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/委取03_更正申報_02稅額減少/IRX017.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/委取03_更正申報_02稅額減少/IRX018.JPG" alt=""></div>

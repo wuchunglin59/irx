@@ -18,4 +18,6 @@
 <li data-target="#myCarousel" data-slide-to="16">17</li>
 <li data-target="#myCarousel" data-slide-to="17">18</li>
 <li data-target="#myCarousel" data-slide-to="18">19</li>
+<li data-target="#myCarousel" data-slide-to="19">20</li>
+<li data-target="#myCarousel" data-slide-to="20">21</li>
 </ul>

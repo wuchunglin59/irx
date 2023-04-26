@@ -12,16 +12,4 @@
 <li data-target="#myCarousel" data-slide-to="10">11</li>
 <li data-target="#myCarousel" data-slide-to="11">12</li>
 <li data-target="#myCarousel" data-slide-to="12">13</li>
-<li data-target="#myCarousel" data-slide-to="13">14</li>
-<li data-target="#myCarousel" data-slide-to="14">15</li>
-<li data-target="#myCarousel" data-slide-to="15">16</li>
-<li data-target="#myCarousel" data-slide-to="16">17</li>
-<li data-target="#myCarousel" data-slide-to="17">18</li>
-<li data-target="#myCarousel" data-slide-to="18">19</li>
-<li data-target="#myCarousel" data-slide-to="19">20</li>
-<li data-target="#myCarousel" data-slide-to="20">21</li>
-<li data-target="#myCarousel" data-slide-to="21">22</li>
-<li data-target="#myCarousel" data-slide-to="22">23</li>
-<li data-target="#myCarousel" data-slide-to="23">24</li>
-<li data-target="#myCarousel" data-slide-to="24">25</li>
 </ul>

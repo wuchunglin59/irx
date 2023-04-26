@@ -17,5 +17,3 @@
 <div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅041_01活儲_更正申報_稅額減少/IRX017.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅041_01活儲_更正申報_稅額減少/IRX018.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅041_01活儲_更正申報_稅額減少/IRX019.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅041_01活儲_更正申報_稅額減少/IRX020.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/線上即時扣款繳稅041_01活儲_更正申報_稅額減少/IRX021.JPG" alt=""></div>

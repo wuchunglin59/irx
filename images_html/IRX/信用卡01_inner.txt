@@ -25,5 +25,3 @@
 <div class="carousel-item"><img src="images/IRX/信用卡01/IRX025.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/信用卡01/IRX026.JPG" alt=""></div>
 <div class="carousel-item"><img src="images/IRX/信用卡01/IRX027.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡01/IRX028.JPG" alt=""></div>
-<div class="carousel-item"><img src="images/IRX/信用卡01/IRX029.JPG" alt=""></div>
