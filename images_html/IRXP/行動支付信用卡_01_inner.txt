@@ -11,5 +11,4 @@
 <div class="carousel-item"><img src="images/IRXP/行動支付信用卡_01/11.png" alt=""></div>
 <div class="carousel-item"><img src="images/IRXP/行動支付信用卡_01/12.png" alt=""></div>
 <div class="carousel-item"><img src="images/IRXP/行動支付信用卡_01/13.png" alt=""></div>
-<div class="carousel-item"><img src="images/IRXP/行動支付信用卡_01/image12.png" alt=""></div>
-<div class="carousel-item"><img src="images/IRXP/行動支付信用卡_01/image14.png" alt=""></div>
+<div class="carousel-item"><img src="images/IRXP/行動支付信用卡_01/14.png" alt=""></div>
