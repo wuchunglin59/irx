@@ -2,10 +2,12 @@ import os
 import re
 
 path = 'images/IRX'
+images_html_path = 'images_html/IRX/'
 files = os.listdir(path)
 
 for dir_name in files:
   png_list = os.listdir(path + '/' + dir_name)
+  
   carousel_indicators = '<ul class="carousel-indicators carousel-indicators-numbers">' + '\n'
   carousel_inner = ''
   i = 0
@@ -15,10 +17,10 @@ for dir_name in files:
         carousel_inner += '<div class="carousel-item"><img src="' + path + '/' + dir_name + '/' + png_name + '" alt=""></div>' + '\n'
         i += 1
         
-  file = open('images_html/IRX/' + dir_name + '_indicators.txt' ,'w', encoding='UTF-8')
+  file = open(images_html_path + dir_name + '_indicators.txt' ,'w', encoding='UTF-8')
   file.write(carousel_indicators + "</ul>")
   file.close()
-  file = open('images_html/IRX/' + dir_name + '_inner.txt' ,'w', encoding='UTF-8')
+  file = open(images_html_path + dir_name + '_inner.txt' ,'w', encoding='UTF-8')
   file.write(carousel_inner)
   file.close()  
 print('end')
