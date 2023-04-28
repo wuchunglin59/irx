@@ -83,7 +83,7 @@ body {
   background: -webkit-linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
   background: linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
   min-height: 100vh;
-  /*background-image : url(../images/back.jpg);*/
+  background-image : url(../images/back.png);
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-position: center 30px;
@@ -195,7 +195,7 @@ Forces carousel image to be 100% width and not max width of 100%
   background: -webkit-linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
   background: linear-gradient(to right, rgb(200, 232, 245), rgb(240, 245, 213));
   min-height: 100vh;
-  /* background-image : url(../images/back1.jpg);*/
+  background-image : url(../images/back1.png);
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-position: center 40px;

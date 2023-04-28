@@ -61,27 +61,37 @@
                 <ul class="navbar-nav mr-auto">
                     <!-- Level one dropdown -->
                     <li class="nav-item dropdown">
-                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">手機報稅及行動電話認證</a>
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">手機報稅</a>
                         <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
                             <li><a href="https://efile.tax.nat.gov.tw/irxw/indexMobile.jsp" target="_blank" class="dropdown-item">手機報稅連結</a></li>
                             <li class="dropdown-submenu">
-                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Ｑ＆Ａ</a>
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Ｑ＆Ａ及懶人包</a>
                                 <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
-                                    <li><a href="https://www.ntbsa.gov.tw/download/88149aacd68e4142a171c66a03088a94" class="dropdown-item" title="下載PDF檔">手機報稅</a></li>
-                                    <li><a href="https://www.ntbsa.gov.tw/download/f10a93eb4de14f738e2b57c61ce5f706" class="dropdown-item" title="下載PDF檔">行動電話認證</a></li>
+                                    <li><a href="https://www.ntbsa.gov.tw/download/88149aacd68e4142a171c66a03088a94" class="dropdown-item" title="下載PDF檔">Ｑ＆Ａ</a></li>
+                                    <li><a href="https://www.dot.gov.tw/download/80776ea0911c402bbab7aa0463a887a3" class="dropdown-item" title="下載PDF檔">懶人包</a></li>                                         
                                 </ul>
-                            </li>
+                            </li>            
+                            <li><a href="#" class="dropdown-item" onclick="selectMidMenu(3)">手機報稅</a></li>
+                            <li><a href="https://www.tax.nat.gov.tw/alltax-declare.html?id=1" target="_blank" class="dropdown-item">申報結果查詢</a></li>                            
+                        </ul>
+                    </li>
+                    <!-- End Level one -->
+
+              <!-- Level one dropdown -->
+                    <li class="nav-item dropdown">
+                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">行動電話認證</a>
+                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
+                            <li><a href="https://efile.tax.nat.gov.tw/irxw/indexMobile.jsp" target="_blank" class="dropdown-item">手機報稅連結</a></li>
                             <li class="dropdown-submenu">
-                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">懶人包</a>
+                                <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Ｑ＆Ａ及懶人包</a>
                                 <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
-                                    <li><a href="https://www.dot.gov.tw/download/80776ea0911c402bbab7aa0463a887a3" class="dropdown-item" title="下載PDF檔">手機報稅</a></li>
-                                    <li><a href="https://www.dot.gov.tw/download/b28352bf6d28413a907a1ccd53c62ed0" class="dropdown-item" title="下載PDF檔">行動電話認證</a></li>                                            
+                                    <li><a href="https://www.ntbsa.gov.tw/download/f10a93eb4de14f738e2b57c61ce5f706" class="dropdown-item" title="下載PDF檔">Ｑ＆Ａ</a></li>
+                                    <li><a href="https://www.dot.gov.tw/download/b28352bf6d28413a907a1ccd53c62ed0" class="dropdown-item" title="下載PDF檔">懶人包</a></li>
                                 </ul>
                             </li>
                             <li class="dropdown-submenu">
                                 <a id="dropdownMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">教學步驟</a>
                                 <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
-                                    <li><a href="#" class="dropdown-item" onclick="selectMidMenu(3)">手機報稅</a></li>
                                     <li><a href="#" class="dropdown-item" onclick="selectMidMenu(2)">Web線上版</a></li>
                                     <li><a href="#" class="dropdown-item" onclick="selectMidMenu(1)">離線版</a></li>
                                     <li><a href="#" class="dropdown-item" onclick="selectMidMenu(5)">稅額試算回復</a></li>
@@ -90,8 +100,7 @@
                             </li>
                             <li><a href="https://www.tax.nat.gov.tw/alltax-declare.html?id=1" target="_blank" class="dropdown-item">申報結果查詢</a></li>                            
                         </ul>
-                    </li>
-                    <!-- End Level one -->
+                    </li>                    
 
                     <!-- Level one dropdown -->
                     <li class="nav-item dropdown">
@@ -289,6 +298,7 @@
                                 </ul>
                             </li>
                             <div class="dropdown-divider"></div>
+                            <li><a href="https://www.etax.nat.gov.tw/etwmain/online-service/file-tax-payment-postpone-installment-due-to-covid-19" target="_blank" class="dropdown-item">受肺炎疫情影響申請延期分期</a></li>
                             <li><a href="https://www.tax.nat.gov.tw/alltax-declare.html?id=1" target="_blank" class="dropdown-item">申報結果查詢</a></li>
                             <li><a href="https://youtube.com/playlist?list=PLgGUCb9nNUXCpHuZSRMK7Zqy7yykU2hhc" target="_blank" class="dropdown-item">影音教學</a></li>
                         </ul>
@@ -302,16 +312,6 @@
                             <!-- Level two dropdown-->
                             <li><a href="#" class="dropdown-item" onclick="selectAttachMenu(1)">操作說明</a></li>                            
                             <li><a href="https://attach.tax.nat.gov.tw/irxatt/index.jsp" class="dropdown-item" target="_blank">附件上傳連結</a></li>
-                        </ul>
-                    </li>
-                    <!-- End Level one -->
-
-                    <!-- End Level one -->
-                    <li class="nav-item dropdown">
-                        <a id="dropdownMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">受肺炎疫情影響申請延期分期</a>
-                        <ul aria-labelledby="dropdownMenu1" class="dropdown-menu dropdown-menu-bg border-0 shadow">
-                            <!-- Level two dropdown-->
-                            <li><a href="https://www.etax.nat.gov.tw/etwmain/online-service/file-tax-payment-postpone-installment-due-to-covid-19" target="_blank" class="dropdown-item">線上申辦</a></li>
                         </ul>
                     </li>
                     <!-- End Level one -->
